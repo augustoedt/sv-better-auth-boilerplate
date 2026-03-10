@@ -19,24 +19,26 @@
 		"db:push": "drizzle-kit push",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
-		"db:studio": "drizzle-kit studio"
+		"db:studio": "drizzle-kit studio",
+		"auth:schema": "npx @better-auth/cli generate --config src/lib/server/auth.ts --output src/lib/server/db/auth.schema.ts --yes",
+		"seed:admin": "tsx scripts/seed-admin.ts"
 	},
 	"devDependencies": {
-		"@better-auth/cli": "^1.4.10",
+		"@better-auth/cli": "^1.4.21",
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.39.1",
 		"@inlang/paraglide-js": "^2.6.0",
 		"@playwright/test": "^1.57.0",
 		"@sveltejs/adapter-auto": "^7.0.0",
-		"@sveltejs/kit": "^2.49.1",
+		"@sveltejs/kit": "^2.53.4",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
-		"@tailwindcss/forms": "^0.5.10",
+		"@tailwindcss/forms": "^0.5.11",
 		"@tailwindcss/typography": "^0.5.19",
-		"@tailwindcss/vite": "^4.1.17",
+		"@tailwindcss/vite": "^4.2.1",
 		"@types/node": "^22",
 		"@vitest/browser-playwright": "^4.0.15",
-		"drizzle-kit": "^0.31.8",
-		"drizzle-orm": "^0.45.0",
+		"drizzle-kit": "^0.31.9",
+		"drizzle-orm": "^0.45.1",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.1",
@@ -46,9 +48,9 @@
 		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prettier-plugin-tailwindcss": "^0.7.2",
-		"svelte": "^5.45.6",
+		"svelte": "^5.53.9",
 		"svelte-check": "^4.3.4",
-		"tailwindcss": "^4.1.17",
+		"tailwindcss": "^4.2.1",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.48.1",
 		"vite": "^7.2.6",
@@ -57,8 +59,8 @@
 		"vitest-browser-svelte": "^2.0.1"
 	},
 	"dependencies": {
-		"better-auth": "^1.4.10",
-		"postgres": "^3.4.7",
-		"zod": "^4.3.5"
+		"better-auth": "^1.4.21",
+		"postgres": "^3.4.8",
+		"zod": "^4.3.6"
 	}
 }
